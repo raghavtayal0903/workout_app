@@ -1,0 +1,145 @@
+.setup-page {
+  min-height: 100vh;
+  padding: 48px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7fbff;
+  background:
+    radial-gradient(circle at top right, rgba(0, 170, 255, 0.16), transparent 34%),
+    #020617;
+}
+
+.setup-panel {
+  width: min(760px, 100%);
+  padding: 48px;
+  border: 1px solid #00aaff;
+  background: rgba(7, 15, 31, 0.96);
+  box-shadow: 0 0 36px rgba(0, 170, 255, 0.16);
+}
+
+.analysis-card {
+  width: min(620px, 100%);
+  padding: 48px;
+  text-align: center;
+  border: 1px solid #00aaff;
+  background: rgba(7, 15, 31, 0.96);
+  box-shadow: 0 0 36px rgba(0, 170, 255, 0.16);
+}
+
+.analysis-card h1 {
+  margin: 12px 0 30px;
+  letter-spacing: 4px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.analysis-grid div {
+  padding: 22px 12px;
+  border: 1px solid #314158;
+  background: #050b16;
+}
+
+.analysis-grid span,
+.analysis-grid strong {
+  display: block;
+}
+
+.analysis-grid span {
+  color: #aab9ca;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.analysis-grid strong {
+  margin-top: 8px;
+  color: #00aaff;
+  font-size: 30px;
+}
+
+.analysis-note {
+  margin-top: 24px;
+  color: #aab9ca;
+}
+
+.analysis-card button {
+  width: 100%;
+}
+
+.setup-panel h1 {
+  margin: 12px 0;
+  letter-spacing: 5px;
+}
+
+.setup-intro {
+  max-width: 560px;
+  color: #aab9ca;
+  line-height: 1.6;
+}
+
+.fitness-form {
+  margin-top: 34px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.fitness-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #aab9ca;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.fitness-form input,
+.fitness-form select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #314158;
+  background: #050b16;
+  color: #f7fbff;
+  font: inherit;
+}
+
+.fitness-form input:focus,
+.fitness-form select:focus {
+  outline: 1px solid #00aaff;
+  border-color: #00aaff;
+}
+
+.fitness-form button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 620px) {
+  .setup-panel {
+    padding: 32px 22px;
+  }
+
+  .setup-panel h1 {
+    font-size: 28px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-card {
+    padding: 32px 22px;
+  }
+
+  .analysis-card h1 {
+    font-size: 25px;
+  }
+}

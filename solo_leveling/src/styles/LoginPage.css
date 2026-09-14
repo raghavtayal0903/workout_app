@@ -1,0 +1,121 @@
+.login-page {
+  background: #050505;
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../assets/images/login-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.system-text {
+  color: #00aaff;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 90px;
+  margin: 10px 0;
+
+  letter-spacing: 12px;
+}
+
+.hero h2 {
+  letter-spacing: 4px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px 30px;
+
+  background: #111827;
+  color: white;
+
+  border: 1px solid #00aaff;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00aaff;
+  color: black;
+}
+
+.login-section {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #020617;
+}
+
+.login-box {
+  width: 350px;
+  padding: 40px;
+
+  background: rgba(10, 15, 30, 0.95);
+
+  border: 1px solid #00aaff;
+  box-shadow: 0 0 30px rgba(0, 170, 255, 0.2);
+
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+}
+
+.login-box input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px;
+  margin: 8px 0;
+
+  background: #050505;
+  color: white;
+
+  border: 1px solid #333;
+}
+
+.login-box button {
+  width: 100%;
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-text span {
+  color: #00aaff;
+  cursor: pointer;
+}

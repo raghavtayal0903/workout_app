@@ -1,0 +1,32 @@
+.main-page {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.main-page h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.setup-box {
+  width: 400px;
+  max-width: 90%;
+  margin: 60px auto;
+  padding: 40px;
+
+  background: #080d1c;
+  border: 1px solid #00aaff;
+}
+
+.setup-box h2 {
+  margin-bottom: 30px;
+}
+
+.setup-box button {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+}

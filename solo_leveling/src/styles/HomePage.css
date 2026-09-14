@@ -1,0 +1,19 @@
+.home-page {
+  min-height: 100vh;
+
+  background: #020617;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}

@@ -1,0 +1,571 @@
+.workout-page {
+  min-height: 100vh;
+  padding: 50px 7%;
+  background: #030712;
+  color: white;
+}
+
+
+/* HEADER */
+
+.workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 35px;
+}
+
+.workout-header h1 {
+  font-size: 48px;
+  letter-spacing: 6px;
+  margin: 10px 0;
+}
+
+.workout-subtitle {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.system-text {
+  color: #00aaff;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+
+/* PLAYER INFO */
+
+.player-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #1e3a5f;
+  background: #08111f;
+}
+
+.player-info span {
+  color: #64748b;
+  font-size: 11px;
+}
+
+.player-info strong {
+  color: #00aaff;
+  margin-right: 15px;
+}
+
+
+/* QUEST HEADER */
+
+.quest-header {
+  margin-top: 45px;
+  padding: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #070f1c;
+  border-left: 3px solid #00aaff;
+}
+
+.quest-header h2 {
+  margin-top: 8px;
+  letter-spacing: 2px;
+}
+
+.quest-status {
+  text-align: right;
+}
+
+.quest-status span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.quest-status strong {
+  color: #00ff9d;
+  letter-spacing: 2px;
+}
+
+
+/* WORKOUT CARDS */
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.workout-card {
+  background: #080f1c;
+  border: 1px solid #1e293b;
+  padding: 25px;
+
+  transition: 0.2s;
+}
+
+.workout-card:hover {
+  border-color: #00aaff;
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.12);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+
+  color: #64748b;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.workout-card h2 {
+  margin: 25px 0 8px;
+  font-size: 20px;
+}
+
+.exercise-count {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+
+/* BUTTON */
+
+.start-button {
+  width: 100%;
+  margin-top: 25px;
+
+  padding: 12px;
+
+  background: transparent;
+  color: #00aaff;
+
+  border: 1px solid #00aaff;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  background: #00aaff;
+  color: #020617;
+}
+
+
+/* TODAY'S QUEST */
+
+.today-quest {
+  margin-top: 45px;
+
+  background: #070f1c;
+  border: 1px solid #1e293b;
+
+  padding: 30px;
+}
+
+.quest-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 20px;
+}
+
+.quest-title h2 {
+  margin-top: 8px;
+}
+
+.quest-title > span {
+  color: #00aaff;
+  font-size: 14px;
+}
+
+
+/* EXERCISES */
+
+.exercise-list {
+  margin-top: 10px;
+}
+
+.exercise-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 120px 40px;
+  align-items: center;
+
+  padding: 18px 10px;
+
+  border-bottom: 1px solid #172033;
+}
+
+.exercise-number {
+  color: #334155;
+  font-weight: bold;
+}
+
+.exercise-name strong {
+  display: block;
+}
+
+.exercise-name span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.exercise-reps {
+  color: #00aaff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.exercise-check {
+  font-size: 24px;
+  color: #475569;
+  text-align: center;
+}
+
+
+/* BEGIN QUEST */
+
+.begin-quest {
+  display: block;
+
+  margin: 30px auto 5px;
+
+  padding: 16px 50px;
+
+  background: #00aaff;
+  color: #020617;
+
+  border: none;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}
+
+.begin-quest:hover {
+  background: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .workout-page {
+    padding: 30px 20px;
+  }
+
+  .workout-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .workout-header h1 {
+    font-size: 32px;
+  }
+
+  .player-info {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .quest-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .quest-status {
+    text-align: left;
+  }
+
+  .exercise-row {
+    grid-template-columns: 35px 1fr 80px 30px;
+  }
+
+  .exercise-reps {
+    font-size: 12px;
+  }
+}
+.system-popup {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 1000;
+
+  width: 280px;
+  padding: 20px;
+
+  background: #07111f;
+  border: 1px solid #00aaff;
+
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+
+  animation: systemPopup 0.3s ease;
+}
+
+.system-popup p {
+  color: #00aaff;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin: 0 0 10px;
+}
+
+.system-popup h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.system-popup strong {
+  color: #00ff9d;
+}
+
+@keyframes systemPopup {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.streak-badge span {
+  font-size: 20px;
+}
+
+.streak-badge small {
+  display: block;
+  color: #64748b;
+  font-size: 9px;
+}
+
+.streak-badge strong {
+  display: block;
+  color: #ff9d00;
+  font-size: 12px;
+}
+/* XP BAR */
+
+.xp-bar-container {
+  width: 100%;
+  height: 8px;
+
+  margin-top: 15px;
+
+  background: #111827;
+
+  border: 1px solid #1e293b;
+}
+
+.xp-bar {
+  height: 100%;
+
+  background: #00aaff;
+
+  transition: width 0.5s ease;
+
+  box-shadow:
+    0 0 10px rgba(0, 170, 255, 0.7);
+}
+
+
+/* SYSTEM POPUP */
+
+.system-popup {
+  position: fixed;
+
+  top: 30px;
+  right: 30px;
+
+  width: 280px;
+
+  padding: 20px;
+
+  background: #07111f;
+
+  border: 1px solid #00aaff;
+
+  box-shadow:
+    0 0 25px rgba(0, 170, 255, 0.3);
+
+  z-index: 1000;
+
+  animation:
+    systemPopup 0.3s ease;
+}
+
+.system-popup p {
+  color: #00aaff;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  margin: 0 0 10px;
+}
+
+.system-popup h2 {
+  margin: 0 0 10px;
+
+  font-size: 18px;
+}
+
+.system-popup strong {
+  color: #00ff9d;
+
+  font-size: 16px;
+}
+
+
+/* STREAK */
+
+.streak-badge {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-left: 10px;
+}
+
+.streak-badge span {
+  font-size: 20px;
+}
+
+.streak-badge small {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+.streak-badge strong {
+  display: block;
+
+  color: #ff9d00;
+
+  font-size: 12px;
+}
+
+
+/* MISSED QUEST */
+
+.missed-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  z-index: 2000;
+}
+
+.missed-box {
+  width: 400px;
+
+  max-width: 90%;
+
+  padding: 35px;
+
+  background: #07111f;
+
+  border: 1px solid #00aaff;
+
+  text-align: center;
+
+  box-shadow:
+    0 0 40px rgba(0, 170, 255, 0.25);
+}
+
+.missed-box h2 {
+  font-size: 28px;
+
+  margin: 15px 0;
+}
+
+.missed-box p:not(.system-text) {
+  color: #94a3b8;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+.missed-box button {
+  display: block;
+
+  width: 100%;
+
+  margin: 12px 0;
+
+  padding: 14px;
+
+  background: transparent;
+
+  color: #00aaff;
+
+  border: 1px solid #00aaff;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.missed-box button:hover {
+  background: #00aaff;
+
+  color: #020617;
+}
+
+
+/* POPUP ANIMATION */
+
+@keyframes systemPopup {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+
+}
